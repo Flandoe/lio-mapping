@@ -71,6 +71,8 @@ int main(int argc, char **argv) {
     processor = PointProcessor(-24.9f, 2, 64);
   } else if (sensor_type == 320) {
     processor = PointProcessor(-25, 15, 32, true);
+  } else if (sensor_type == 3200) {
+    processor = PointProcessor(-90, 90, 32, true);
   }
 
   PointProcessorConfig config;
