@@ -5,6 +5,7 @@
   <arg name="rviz" default="true" />
 
   <node pkg="lio" type="lio_processor_node" name="lio_processor" output="screen" >
+  <param name="sensor_type" type="int" value="32" />
   <remap from="/velodyne_points" to="/vlp_top/points_raw"/>
   </node>
   <node pkg="lio" type="lio_odometry_node" name="lio_odometry" output="screen" />
